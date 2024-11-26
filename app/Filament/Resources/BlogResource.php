@@ -50,14 +50,16 @@ class BlogResource extends Resource
                 Forms\Components\Select::make('category_id')
                     ->relationship(
                         name: 'category',
-                        titleAttribute: 'name'
+                        titleAttribute: 'name',
+                        modifyQueryUsing: fn(Builder $query) => $query->where('category_type', 'blog')
                     )
                     ->required(),
                 Forms\Components\FileUpload::make('thumbnail')
                     ->image()
                     ->directory('blog_thumbnail')
                     ->required(),
-                Forms\Components\Toggle::make('status'),
+                Forms\Components\Toggle::make('status')
+                    ->default(true),
             ]);
     }
 

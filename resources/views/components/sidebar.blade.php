@@ -14,11 +14,14 @@
     aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <ul class="space-y-2 font-medium">
-            <label class="inline-flex items-center cursor-pointer mb-3">
+            <a href="{{ route('quran.index') }}"><img src="{{ asset('images/logo-sahabatmuslim.png') }}" alt=""
+                    class="w-24 h-24 place-self-center"></a>
+
+            <label class="flex items-center justify-center cursor-pointer mb-3">
                 <span class="me-3 text-sm font-medium text-gray-900 dark:text-gray-300">Juz</span>
                 <input type="checkbox" value="" class="sr-only peer" id="toggleJuzOrSurah">
                 <div
-                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-amber-300 dark:peer-focus:ring-amber-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-amber-600">
                 </div>
                 <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Surat</span>
             </label>
@@ -48,5 +51,3 @@
         </ul>
     </div>
 </aside>
-
-@yield('content')

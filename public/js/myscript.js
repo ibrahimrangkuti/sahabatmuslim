@@ -28,12 +28,52 @@ document.addEventListener("DOMContentLoaded", function () {
         menuSurah.classList.add("hidden");
     }
 
-    audioPlayers.forEach((audio, index) => {
-        audio.addEventListener("ended", function () {
-            // Cari audio berikutnya
-            const nextAudio = audioPlayers[index + 1];
+    audioPlayers.forEach((audioPlayer) => {
+        audioPlayer.addEventListener("play", function () {
+            const index = this.dataset.index;
+            const verseElement = document.getElementById(`verse-${index}`);
+            const arabicText = verseElement.querySelector(".verse-arabic");
+            const transliteration = verseElement.querySelector(
+                ".verse-transliteration"
+            );
+
+            if (verseElement) {
+                // Fokus pada elemen yang sedang dibaca
+                verseElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                });
+
+                document.querySelectorAll(".verse-arabic").forEach((arabic) => {
+                    if (arabic.classList.contains("text-amber-500")) {
+                        arabic.classList.remove("text-amber-500");
+                    }
+                });
+
+                document
+                    .querySelectorAll(".verse-transliteration")
+                    .forEach((tl) => {
+                        if (tl.classList.contains("text-amber-500")) {
+                            tl.classList.remove("text-amber-500");
+                        }
+                    });
+
+                arabicText.classList.add("text-amber-500");
+                transliteration.classList.add("text-amber-500");
+            }
+        });
+
+        // Event untuk auto-play audio selanjutnya
+        audioPlayer.addEventListener("ended", function () {
+            const currentIndex = parseInt(this.dataset.index, 10);
+            const nextIndex = currentIndex + 1;
+
+            // Mulai audio selanjutnya jika ada
+            const nextAudio = document.querySelector(
+                `.audio-player[data-index="${nextIndex}"]`
+            );
             if (nextAudio) {
-                nextAudio.play(); // Mainkan audio berikutnya
+                nextAudio.play();
             }
         });
     });

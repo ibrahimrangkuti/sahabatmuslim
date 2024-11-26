@@ -54,7 +54,8 @@ class UserResource extends Resource
                     }
                 ),
                 Tables\Columns\TextColumn::make('name')->sortable(),
-                Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('email')
+                    ->copyable(),
             ])
             ->filters([
                 //

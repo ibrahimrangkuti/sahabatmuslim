@@ -39,9 +39,9 @@ class DoaResource extends Resource
                 Forms\Components\Select::make('category_id')
                     ->relationship(
                         name: 'category',
-                        titleAttribute: 'name'
+                        titleAttribute: 'name',
+                        modifyQueryUsing: fn(Builder $query) => $query->where('category_type', 'doa')
                     )
-                    ->searchable()
                     ->columnSpan(2)
                     ->required(),
                 Forms\Components\Textarea::make('arabic_text')
@@ -65,6 +65,8 @@ class DoaResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->description(fn(Doa $record): string => $record->arabic_text)
+                    ->wrap(),
+                Tables\Columns\TextColumn::make('category.name')
             ])
             ->filters([
                 //

@@ -10,7 +10,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['slug', 'name'];
+    protected $fillable = ['slug', 'name', 'category_type'];
 
     public function blogs(): HasMany
     {

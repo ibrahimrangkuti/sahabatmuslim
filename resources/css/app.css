@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
     font-family: "Poppins";
-    min-height: 2000px;
+    scroll-behavior: smooth;
 }
 
 .active {

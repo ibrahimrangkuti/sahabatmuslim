@@ -37,7 +37,15 @@ class CategoryResource extends Resource
                         }
                     })
                     ->required(),
-                Forms\Components\TextInput::make('slug')->readOnly()
+                Forms\Components\TextInput::make('slug')->readOnly(),
+                Forms\Components\Select::make('category_type')
+                    ->options([
+                        'blog' => 'Blog',
+                        'doa' => 'Doa',
+                        'hadist' => 'Hadist'
+                    ])
+                    ->columnSpan(2)
+                    ->required()
             ]);
     }
 
@@ -57,6 +65,7 @@ class CategoryResource extends Resource
                 ),
                 Tables\Columns\TextColumn::make('name')->sortable(),
                 Tables\Columns\TextColumn::make('slug'),
+                Tables\Columns\TextColumn::make('category_type')
             ])
             ->filters([
                 //
