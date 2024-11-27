@@ -17,7 +17,8 @@ Route::get('/quran', [QuranController::class, 'index'])->name('quran.index');
 Route::get('/quran/juz/{no}', [QuranController::class, 'juz']);
 Route::get('/quran/surah/{no}', [QuranController::class, 'surahDetail']);
 
-Route::get('/generate', function(){
-    \Illuminate\Support\Facades\Artisan::call('storage:link');
-    echo 'ok';
- });
+Route::get('/storage-link', function () {
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/public/storage';
+    symlink($targetFolder, $linkFolder);
+});
