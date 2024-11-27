@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/blog', [ArticleController::class, 'index'])->name('blog.index');
 Route::get('/article/{slug}', [ArticleController::class, 'show'])->name('article.show');
 
 Route::get('/doa', [DoaController::class, 'index'])->name('doa.index');

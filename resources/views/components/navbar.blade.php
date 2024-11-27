@@ -27,12 +27,12 @@
                         class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Beranda</a>
                 </li>
                 <li>
-                    <a href="{{ route('doa.index') }}"
-                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Doa</a>
+                    <a href="{{ route('blog.index') }}"
+                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Blog</a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Hadist</a>
+                    <a href="{{ route('doa.index') }}"
+                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Doa</a>
                 </li>
                 <li>
                     <a href="{{ url('/quran') }}"

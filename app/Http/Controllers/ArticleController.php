@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+    public function index()
+    {
+        $articles = Blog::where('status', 1)->get();
+
+        return view('pages.article.index', [
+            'articles' => $articles
+        ]);
+    }
+
     public function show($slug)
     {
         $article = Blog::where('slug', $slug)->first();
