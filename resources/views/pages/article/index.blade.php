@@ -42,7 +42,7 @@
                     </div>
                 </div>
             @endforeach
-            <div class="py-10">
+            <div class="py-10 flex justify-center">
                 {{ $articles->links() }}
             </div>
         </div>
