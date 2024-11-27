@@ -12,3 +12,7 @@ html {
 .active {
     @apply bg-amber-500 hover:!bg-amber-600 text-white;
 }
+
+.category-label-section {
+    scrollbar-width: none;
+}

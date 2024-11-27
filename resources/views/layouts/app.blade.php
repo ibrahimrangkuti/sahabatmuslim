@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sahabat Muslim</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -18,12 +21,36 @@
     @include('components.footer')
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <script>
-        // Typed JS
-        var typed = new Typed(".typed", {
-            strings: ["doa harian", "hadist pilihan", "inspirasi Islami"],
-            typeSpeed: 100,
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Typed JS
+            var typed = new Typed(".typed", {
+                strings: ["doa harian", "hadist pilihan", "inspirasi Islami"],
+                typeSpeed: 100,
+            });
+
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        })
     </script>
 </body>
 
