@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="max-w-screen-xl mx-4 md:mx-auto pb-20" id="blog">
+    <section class="max-w-screen-xl mx-4 md:mx-auto" id="blog">
         <div class="flex flex-col items-center py-12">
             <h4 class="text-2xl font-bold">Blog</h4>
             <p class="md:w-1/2 text-center text-lg text-slate-500">We use an agile approach to test assumptions and
@@ -42,7 +42,9 @@
                     </div>
                 </div>
             @endforeach
-            {{ $articles->links() }}
+            <div class="py-10">
+                {{ $articles->links() }}
+            </div>
         </div>
     </section>
 @endsection
