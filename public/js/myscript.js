@@ -45,21 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 document.querySelectorAll(".verse-arabic").forEach((arabic) => {
-                    if (arabic.classList.contains("text-amber-500")) {
-                        arabic.classList.remove("text-amber-500");
+                    if (arabic.classList.contains("!text-amber-500")) {
+                        arabic.classList.remove("!text-amber-500");
                     }
                 });
 
                 document
                     .querySelectorAll(".verse-transliteration")
                     .forEach((tl) => {
-                        if (tl.classList.contains("text-amber-500")) {
-                            tl.classList.remove("text-amber-500");
+                        if (tl.classList.contains("!text-amber-500")) {
+                            tl.classList.remove("!text-amber-500");
                         }
                     });
 
-                arabicText.classList.add("text-amber-500");
-                transliteration.classList.add("text-amber-500");
+                arabicText.classList.add("!text-amber-500");
+                transliteration.classList.add("!text-amber-500");
             }
         });
 
