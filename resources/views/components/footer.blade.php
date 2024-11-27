@@ -45,13 +45,7 @@
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">API Source</h2>
                 <ul class="text-gray-500 dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Licensing</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Terms</a>
+                        <a href="https://api.quran.gading.dev/" class="hover:underline">API Qur'an Gading Dev</a>
                     </li>
                 </ul>
             </div>
