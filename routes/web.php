@@ -16,3 +16,8 @@ Route::get('/doa', [DoaController::class, 'index'])->name('doa.index');
 Route::get('/quran', [QuranController::class, 'index'])->name('quran.index');
 Route::get('/quran/juz/{no}', [QuranController::class, 'juz']);
 Route::get('/quran/surah/{no}', [QuranController::class, 'surahDetail']);
+
+Route::get('/generate', function(){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
+ });
