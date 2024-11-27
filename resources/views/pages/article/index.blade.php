@@ -4,12 +4,8 @@
     <section class="max-w-screen-xl mx-4 md:mx-auto pb-16" id="blog">
         <div class="flex flex-col items-center py-12">
             <h4 class="text-2xl font-bold">Blog</h4>
-            <p class="md:w-1/2 text-center text-lg text-slate-500">We use an agile approach to test assumptions and
-                connect
-                with the
-                needs of your
-                audience
-                early and often.</p>
+            <p class="md:w-1/2 text-center text-lg text-slate-500">Temukan artikel Islami yang mendalam dan inspiratif untuk
+                membantu Anda memahami, menjalani, dan menyebarkan nilai-nilai Islam dalam kehidupan sehari-hari.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             @foreach ($articles as $article)
