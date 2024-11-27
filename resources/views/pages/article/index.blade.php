@@ -11,7 +11,7 @@
                 audience
                 early and often.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             @foreach ($articles as $article)
                 <div
                     class="max-w-full max-h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
