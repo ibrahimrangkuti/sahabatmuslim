@@ -9,7 +9,7 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Blog::where('status', 1)->simplePaginate(9);
+        $articles = Blog::where('status', 1)->latest()->simplePaginate(9);
 
         return view('pages.article.index', [
             'articles' => $articles
