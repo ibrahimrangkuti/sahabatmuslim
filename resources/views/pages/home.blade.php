@@ -176,7 +176,7 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{ $article->category->name }}</span>
                         <a href="{{ route('article.show', $article->slug) }}">
-                            <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-3">
+                            <h5 class="text-2xl text-justify font-bold tracking-tight text-gray-900 dark:text-white mt-3">
                                 {{ $article->title }}
                             </h5>
                         </a>
