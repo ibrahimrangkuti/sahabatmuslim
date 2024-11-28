@@ -17,7 +17,7 @@
                         <a href="{{ route('quran.index') }}" class="hover:underline">Al Qur'an</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Tentang</a>
+                        <a href="{{ route('about.index') }}" class="hover:underline">Tentang</a>
                     </li>
                 </ul>
             </div>
