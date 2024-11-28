@@ -2,9 +2,9 @@
 
 @section('content')
     <!--
-                                                                                                                                                                                                                                                                                                                                                                                                                                            Install the "flowbite-typography" NPM package to apply styles and format the article content:
-                                                                                                                                                                                                                                                                                                                                                                                                                                            URL: https://flowbite.com/docs/components/typography/
-                                                                                                                                                                                                                                                                                                                                                                                                                                        -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                Install the "flowbite-typography" NPM package to apply styles and format the article content:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                URL: https://flowbite.com/docs/components/typography/
+                                                                                                                                                                                                                                                                                                                                                                                                                                            -->
 
     <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
@@ -51,7 +51,7 @@
                             <img src="{{ asset('storage/' . $relatedArticle->thumbnail) }}"
                                 class="w-full h-[180px] object-cover mb-5 rounded-lg" alt="Image 1">
                         </a>
-                        <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                        <h2 class="mb-2 text-xl text-justify font-bold leading-tight text-gray-900 dark:text-white">
                             <a href="{{ route('article.show', $relatedArticle->slug) }}">{{ $relatedArticle->title }}</a>
                         </h2>
                         {{-- <p class="mb-4 text-gray-500 dark:text-gray-400">{{ Str::limit($relatedArticle->content, 100) }}</p> --}}
