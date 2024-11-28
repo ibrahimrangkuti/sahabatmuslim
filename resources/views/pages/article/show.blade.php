@@ -2,9 +2,9 @@
 
 @section('content')
     <!--
-                                                                                                                                                                                                                                                                                                                                                                                                                                                Install the "flowbite-typography" NPM package to apply styles and format the article content:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                URL: https://flowbite.com/docs/components/typography/
-                                                                                                                                                                                                                                                                                                                                                                                                                                            -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    Install the "flowbite-typography" NPM package to apply styles and format the article content:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    URL: https://flowbite.com/docs/components/typography/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                -->
 
     <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
@@ -70,7 +70,8 @@
             <div class="mx-auto max-w-screen-md sm:text-center">
                 <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Kotak
                     Saran</h2>
-                <p class="mx-auto mb-8 max-w-2xl  text-gray-500 md:mb-8 sm:text-xl dark:text-gray-400">Kami ingin terus
+                <p class="mx-auto mb-8 max-w-2xl text-justify  text-gray-500 md:mb-8 sm:text-xl dark:text-gray-400">Kami
+                    ingin terus
                     berkembang bersama Anda. Berikan saran terbaik Anda, dan mari wujudkan layanan yang lebih
                     baik untuk semua.
                 </p>
