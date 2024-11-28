@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Al Qur'an Digital - Sahabat Muslim</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <link rel="shortcut icon" href="{{ asset('images/logo-sahabatmuslim.png') }}" type="image/x-icon">
 </head>
 
 <body>

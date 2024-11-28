@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sahabat Muslim</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <link rel="shortcut icon" href="{{ asset('images/logo-sahabatmuslim.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
