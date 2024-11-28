@@ -27,7 +27,7 @@
             </label>
 
             <div id="menu-juz" class="space-y-2">
-                @for ($i = 0; $i <= 30; $i++)
+                @for ($i = 1; $i <= 30; $i++)
                     <li>
                         <a href="/quran/juz/{{ $i }}"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 group {{ request()->is('quran/juz/' . $i) ? 'active' : '' }}">
