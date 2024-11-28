@@ -40,7 +40,7 @@
                         Qur'an</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{{ route('about.index') }}"
                         class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-amber-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Tentang</a>
                 </li>
             </ul>
